@@ -1,5 +1,8 @@
 import _ from 'lodash';
 import fuzzy from 'fuzzyset.js';
+import diff from 'deep-diff';
+
+export const deepDiff = diff;
 
 export function stringFuzzyEqual(a, b, threshold = 0.5) {
 
